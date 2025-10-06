@@ -5,7 +5,7 @@ from ckeditor.fields import RichTextField
 import uuid
 from django.utils import timezone
 from user.models import Profile,Organization,Teacher,Student
-from moviepy.editor import *
+# from moviepy.editor import *  # Temporarily commented out
 import subprocess
 
 class Tags(models.Model):

@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'user_agents',
     'axes',
     'silk',
+    'debug_toolbar',  # Added for django-debug-toolbar
     'allauth',  # django-allauth
     'allauth.account',
     'allauth.socialaccount',
@@ -71,6 +72,7 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'allauth.account.middleware.AccountMiddleware',  # Required for django-allauth
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     # 'website.middleware.UserActivityMiddleware',
